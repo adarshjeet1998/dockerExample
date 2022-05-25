@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'exampleregistrydocker1698d420-auth'
 
   # Agent VM image name
-  vmImageName: example
+  vmImageName: 'example'
 
   # Name of the new namespace being created to deploy the PR changes.
   k8sNamespaceForPR: 'review-app-$(System.PullRequest.PullRequestId)'
