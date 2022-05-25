@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: adarshjeetdockerexample 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: adarshjeetdockerexample
+  template:
+    metadata:
+      labels:
+        app: adarshjeetdockerexample 
+    spec:
+      containers:
+        - name: adarshjeetdockerexample 
+          image: exampleregistrydocker.azurecr.io/adarshjeetdockerexample
+          ports:
+          - containerPort: 8080
