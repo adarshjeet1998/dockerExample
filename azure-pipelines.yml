@@ -55,7 +55,7 @@ stages:
     condition: and(succeeded(), not(startsWith(variables['Build.SourceBranch'], 'refs/pull/')))
     displayName: Deploy
     pool:
-      vmImage: $(vmImageName)
+      vmImage: $(example)
     environment: 'adarshjeet1998dockerExample.default'
     strategy:
       runOnce:
